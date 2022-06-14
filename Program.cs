@@ -2,6 +2,7 @@
 const int Perhour = 20;
 const int Fullday = 8;
 const int PartTime = 4;
+const int NoOfday= 20;
 
 Random random = new Random();
 
