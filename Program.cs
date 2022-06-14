@@ -17,7 +17,17 @@ else
 {
     Console.WriteLine("Absent");
 }
+{
+    int PartTimeSalary = (PartTime * Perhour);
+    Console.WriteLine("The Part Time Salary is " + PartTimeSalary);
 
+
+    int salary = (Perhour * Fullday);
+    Console.WriteLine("Monthly Salary");
+    Console.WriteLine("Full Time Job : " + (salary * 20));
+
+
+}
 
 
 
