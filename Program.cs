@@ -22,7 +22,8 @@ else
     Console.WriteLine("Absent");
     Console.WriteLine( "Noo wages" );
 }
-
+//Monthly Salary is provided below with 20 days as a month
+//Same with part time work too
 {
     int PartTimeSalary = (PartTime * Perhour);
     Console.WriteLine("The Part Time Salary is " + PartTimeSalary);
