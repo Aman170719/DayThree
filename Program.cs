@@ -1,26 +1,36 @@
-﻿Random random = new Random();
+﻿Console.WriteLine("welcone to the Salary Calculator Simulation");
+const int Perhour = 20;
+const int Fullday = 8;
+const int PartTime = 4;
+
+Random random = new Random();
 
 int num = random.Next(1, 3);
 
 Console.WriteLine(num);
 
-switch (num)
+if (num == 1)
 {
-    case 1:
-        Console.WriteLine("Employee Is Present");
-        int fullTime = 8;
-        int wages = (fullTime * 20);
-        Console.WriteLine(wages);
-        break;
+    Console.WriteLine("Present");
+    int salary = ( Perhour * Fullday );
+    Console.WriteLine("Day Salary" + salary );
 
-    case 2:
-        Console.WriteLine("Employee Is PartTime");
-        int partTime = 4;
-        int wages2 = (partTime * 20);
-        Console.WriteLine(wages2);
-        break;
+}
+else
+{
+    Console.WriteLine("Absent");
+    Console.WriteLine( "Noo wages" );
+}
 
-    default:
-        Console.WriteLine("Employee Is Absent");
-        break;
+{
+    int PartTimeSalary = (PartTime * Perhour);
+    Console.WriteLine("The Part Time Salary is " + PartTimeSalary);
+
+
+    int salary = (Perhour * Fullday);
+    Console.WriteLine("Monthly Salary");
+    Console.WriteLine("Full Time Job : " + (salary * 20));
+
+
+    Console.WriteLine("Part Time Job : " + (PartTimeSalary * 20));
 }
